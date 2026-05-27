@@ -1,1 +1,0 @@
-# eventcon-day-1
