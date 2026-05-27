@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Utsav Events India</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div id="navOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:998;"></div>
+<style>#navOverlay.active{display:block!important;}</style>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">Utsav<span>Events</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">Pages <i class="fa fa-chevron-down" style="font-size:0.65rem;margin-left:4px;"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#speakers">Artists</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="tickets.html" class="nav-link">Tickets</a></li>
+      <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+      <li class="nav-item nav-cta"><a href="tickets.html" class="btn-primary">Book Tickets</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-subtitle">Explore India</span>
+    <h1>Upcoming <span>Events</span></h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa fa-chevron-right" style="font-size:0.7rem;color:var(--text-muted);"></i>
+      <span>Events</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTS LISTING ===== -->
+<section class="page-section">
+  <div class="container">
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all">All Cities</button>
+      <button class="filter-btn" data-filter="hyderabad">Hyderabad</button>
+      <button class="filter-btn" data-filter="mumbai">Mumbai</button>
+      <button class="filter-btn" data-filter="bangalore">Bengaluru</button>
+      <button class="filter-btn" data-filter="chennai">Chennai</button>
+      <button class="filter-btn" data-filter="delhi">Delhi</button>
+      <button class="filter-btn" data-filter="kolkata">Kolkata</button>
+    </div>
+
+    <div class="event-cards-grid">
+
+      <!-- Hyderabad 1 -->
+      <div class="event-card" data-city="hyderabad">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Hyderabad Fest" />
+          <div class="event-card-date"><span class="day">20</span><span class="month">Dec</span></div>
+          <span class="event-tag">Music</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Hyderabad, Telangana</p>
+          <h3 class="event-card-title">Hyderabad Grand Music Festival 2025</h3>
+          <p class="event-card-desc">Tollywood, classical & fusion at HICC Novotel featuring DSP, Rahul Sipligunj & Shreya Ghoshal.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 06:00 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> HICC, Novotel</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹1,499 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hyderabad 2 -->
+      <div class="event-card" data-city="hyderabad">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1478147427282-58a87a433b2a?w=600&q=80" alt="Hyderabad Jazz" />
+          <div class="event-card-date"><span class="day">05</span><span class="month">Jan</span></div>
+          <span class="event-tag">Jazz & Folk</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Hyderabad, Telangana</p>
+          <h3 class="event-card-title">Charminar Folk & Jazz Evening</h3>
+          <p class="event-card-desc">A magical evening of Hyderabadi folk music and jazz fusion under the stars at Lumbini Park.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 07:00 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> Lumbini Park</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹799 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mumbai -->
+      <div class="event-card" data-city="mumbai">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Mumbai Beats" />
+          <div class="event-card-date"><span class="day">15</span><span class="month">Nov</span></div>
+          <span class="event-tag">Concert</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+          <h3 class="event-card-title">Mumbai Beats — Bollywood Night Live</h3>
+          <p class="event-card-desc">Star-studded Bollywood concert at MMRDA BKC, featuring Sunidhi Chauhan & Arijit Singh.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 07:00 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> MMRDA, BKC</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹2,199 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bengaluru -->
+      <div class="event-card" data-city="bangalore">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80" alt="Bengaluru Fest" />
+          <div class="event-card-date"><span class="day">25</span><span class="month">Jan</span></div>
+          <span class="event-tag">Tech + Music</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
+          <h3 class="event-card-title">Namma Bengaluru Culture Fest 2026</h3>
+          <p class="event-card-desc">Indie music, tech showcases & Kannada folk art at Palace Grounds with Anirudh & Vijay Prakash.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 05:00 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> Palace Grounds</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹999 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chennai -->
+      <div class="event-card" data-city="chennai">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80" alt="Chennai Music" />
+          <div class="event-card-date"><span class="day">10</span><span class="month">Feb</span></div>
+          <span class="event-tag">Carnatic</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Chennai, Tamil Nadu</p>
+          <h3 class="event-card-title">Madras Music Season Special Live</h3>
+          <p class="event-card-desc">An extraordinary Carnatic + Kollywood fusion concert at YMCA Ground, Nandanam, Chennai.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 06:30 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> YMCA Ground, Nandanam</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹1,199 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Delhi -->
+      <div class="event-card" data-city="delhi">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?w=600&q=80" alt="Delhi Festival" />
+          <div class="event-card-date"><span class="day">14</span><span class="month">Feb</span></div>
+          <span class="event-tag">Sufi & Classical</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> New Delhi, Delhi NCR</p>
+          <h3 class="event-card-title">Dilli Dilwalon Ki — Sufi Night</h3>
+          <p class="event-card-desc">An enchanting Sufi & Hindustani classical night under the stars at Sirifort Auditorium, New Delhi.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 07:30 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> Sirifort Auditorium</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹1,799 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolkata -->
+      <div class="event-card" data-city="kolkata">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?w=600&q=80" alt="Kolkata Durga" />
+          <div class="event-card-date"><span class="day">22</span><span class="month">Mar</span></div>
+          <span class="event-tag">Cultural</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Kolkata, West Bengal</p>
+          <h3 class="event-card-title">City of Joy Cultural Grand Fest</h3>
+          <p class="event-card-desc">Rabindra Sangeet, Baul folk music & Bangla film music extravaganza at Netaji Indoor Stadium.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 05:30 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> Netaji Indoor Stadium</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹849 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mumbai 2 -->
+      <div class="event-card" data-city="mumbai">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&q=80" alt="Mumbai EDM" />
+          <div class="event-card-date"><span class="day">08</span><span class="month">Mar</span></div>
+          <span class="event-tag">EDM</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+          <h3 class="event-card-title">Sunburn Mumbai — EDM Weekend</h3>
+          <p class="event-card-desc">India's biggest EDM festival returns to Mumbai's D.Y. Patil Stadium for a 2-day electrifying experience.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 04:00 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> D.Y. Patil Stadium</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹3,499 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hyderabad 3 -->
+      <div class="event-card" data-city="hyderabad">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80" alt="Hyderabad Comedy" />
+          <div class="event-card-date"><span class="day">18</span><span class="month">Apr</span></div>
+          <span class="event-tag">Comedy & Music</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Hyderabad, Telangana</p>
+          <h3 class="event-card-title">LOL Hyd — Comedy & Live Music Night</h3>
+          <p class="event-card-desc">Hyderabad's biggest comedy & music mashup featuring stand-up comedians and emerging Telangana artists.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 07:00 PM</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> Shilpakala Vedika</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹599 <small>onwards</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-brand">Utsav<span>Events</span></a>
+        <p class="footer-desc">India's premier event management platform celebrating culture, music, and unforgettable experiences.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">All Events</a></li>
+          <li><a href="tickets.html">Book Tickets</a></li>
+          <li><a href="index.html#speakers">Artists</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Our Cities</p>
+        <ul class="footer-links">
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Mumbai</a></li>
+          <li><a href="#">Bengaluru</a></li>
+          <li><a href="#">Chennai</a></li>
+          <li><a href="#">Delhi NCR</a></li>
+          <li><a href="#">Kolkata</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Contact Us</p>
+        <div class="footer-contact-item"><i class="fa fa-map-marker-alt"></i><span>Banjara Hills, Road No. 12,<br>Hyderabad — 500034</span></div>
+        <div class="footer-contact-item"><i class="fa fa-phone"></i><span>+91 98765 43210</span></div>
+        <div class="footer-contact-item"><i class="fa fa-envelope"></i><span>hello@utsavevents.in</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>UtsavEvents</span>. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

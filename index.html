@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utsav Events — India's Premier Event Platform</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAV OVERLAY (mobile) -->
+<div id="navOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:998;" onclick="this.style.display='none'"></div>
+<style>#navOverlay.active{display:block!important;}</style>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">Utsav<span>Events</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+      <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">Pages <i class="fa fa-chevron-down" style="font-size:0.65rem;margin-left:4px;"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#speakers">Artists</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="tickets.html" class="nav-link">Tickets</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      <li class="nav-item nav-cta"><a href="tickets.html" class="btn-primary">Book Tickets</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">Live Events 2025 — India Tour</div>
+      <h1>India's Biggest<br><span>Music & Culture</span><br>Festival</h1>
+      <p class="hero-event-name">Utsav Grand Fest — Hyderabad Edition</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><i class="fa fa-calendar"></i> 20 December, 2025</div>
+        <div class="hero-meta-item"><i class="fa fa-map-marker-alt"></i> HICC, Hyderabad</div>
+        <div class="hero-meta-item"><i class="fa fa-music"></i> 12+ Artists</div>
+        <div class="hero-meta-item"><i class="fa fa-users"></i> 10,000+ Attendees</div>
+      </div>
+      <div class="hero-actions">
+        <a href="tickets.html" class="btn-primary"><i class="fa fa-ticket-alt" style="margin-right:8px;"></i>Book Tickets</a>
+        <a href="#events" class="btn-outline">Explore Events</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COUNTDOWN ===== -->
+<section class="countdown-section">
+  <div class="container">
+    <div class="countdown-inner">
+      <div>
+        <p class="section-subtitle">Don't Miss Out</p>
+        <h2 class="section-title">Hyderabad Fest <span>Starts In</span></h2>
+      </div>
+      <div class="countdown-timer" id="countdown1"></div>
+      <a href="tickets.html" class="btn-primary">Get Tickets Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UPCOMING EVENTS ===== -->
+<section class="events-section" id="events">
+  <div class="container">
+    <div class="events-header">
+      <div>
+        <span class="section-subtitle">Upcoming Shows</span>
+        <h2 class="section-title">Explore Our <span>Events</span></h2>
+      </div>
+      <a href="events.html" class="btn-outline">View All Events</a>
+    </div>
+    <div class="event-cards-grid">
+
+      <!-- Event 1 -->
+      <div class="event-card" data-city="hyderabad">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Hyderabad Music Fest" />
+          <div class="event-card-date"><span class="day">20</span><span class="month">Dec</span></div>
+          <span class="event-tag">Music</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Hyderabad, Telangana</p>
+          <h3 class="event-card-title">Hyderabad Grand Music Festival 2025</h3>
+          <p class="event-card-desc">A spectacular evening of Tollywood, classical and fusion music at HICC, featuring top artists from across India.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 06:00 PM Onwards</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> HICC, Novotel</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹1,499 <small>per person</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card" data-city="mumbai">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Mumbai Beats" />
+          <div class="event-card-date"><span class="day">15</span><span class="month">Nov</span></div>
+          <span class="event-tag">Concert</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+          <h3 class="event-card-title">Mumbai Beats — Bollywood Night Live</h3>
+          <p class="event-card-desc">A star-studded Bollywood live concert at the iconic Bandra Kurla Complex, Mumbai. Dance the night away!</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 07:00 PM Onwards</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> MMRDA Ground, BKC</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹2,199 <small>per person</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event-card" data-city="bangalore">
+        <div class="event-card-img">
+          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80" alt="Bangalore Tech Fest" />
+          <div class="event-card-date"><span class="day">25</span><span class="month">Jan</span></div>
+          <span class="event-tag">Tech + Music</span>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-city"><i class="fa fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
+          <h3 class="event-card-title">Namma Bengaluru Culture Fest 2026</h3>
+          <p class="event-card-desc">A unique blend of indie music, tech showcases, and Kannada folk art at Palace Grounds, Bengaluru.</p>
+          <div class="event-card-meta">
+            <span class="event-card-meta-item"><i class="fa fa-clock"></i> 05:00 PM Onwards</span>
+            <span class="event-card-meta-item"><i class="fa fa-map-pin"></i> Palace Grounds</span>
+          </div>
+          <div class="event-card-footer">
+            <div class="event-price">₹999 <small>per person</small></div>
+            <a href="tickets.html" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ARTISTS / SPEAKERS ===== -->
+<section class="speakers-section" id="speakers">
+  <div class="container">
+    <div class="speakers-header">
+      <span class="section-subtitle">Performing Artists</span>
+      <h2 class="section-title">Meet Our <span>Lineup</span></h2>
+      <p style="color:var(--text-muted);max-width:520px;margin:16px auto 0;font-size:0.92rem;">India's most celebrated musicians, performers, and artists coming together for one unforgettable experience.</p>
+    </div>
+    <div class="speakers-grid">
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80" alt="Rahul Sipligunj" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Rahul Sipligunj</h3>
+          <p class="speaker-role">Tollywood Singer</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Hyderabad, Telangana</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80" alt="Sunidhi Chauhan" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Sunidhi Chauhan</h3>
+          <p class="speaker-role">Bollywood Vocalist</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" alt="Anirudh Ravichander" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Anirudh Ravichander</h3>
+          <p class="speaker-role">Music Composer & DJ</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Chennai, Tamil Nadu</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&q=80" alt="Shreya Ghoshal" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Shreya Ghoshal</h3>
+          <p class="speaker-role">Classical & Film Singer</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Kolkata, West Bengal</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1535643302794-19c3804b874b?w=400&q=80" alt="Devi Sri Prasad" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Devi Sri Prasad</h3>
+          <p class="speaker-role">Rockstar Composer</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Hyderabad, Telangana</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1487537708258-7c6a37e6abe3?w=400&q=80" alt="Arijit Singh" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Arijit Singh</h3>
+          <p class="speaker-role">Romantic Vocalist</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Murshidabad, West Bengal</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1527891751199-7225231a68dd?w=400&q=80" alt="Vijay Prakash" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Vijay Prakash</h3>
+          <p class="speaker-role">Kannada Film Singer</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=80" alt="Sona Mohapatra" />
+          <div class="speaker-overlay">
+            <a href="#" class="speaker-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="speaker-social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="speaker-body">
+          <h3 class="speaker-name">Sona Mohapatra</h3>
+          <p class="speaker-role">Indie & Folk Singer</p>
+          <p class="speaker-city"><i class="fa fa-map-marker-alt"></i> Cuttack, Odisha</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80" alt="About Utsav Events" />
+        </div>
+        <div class="about-img-badge">
+          <span class="big-num">10+</span>
+          <span class="big-label">Years of Events</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-subtitle">About The Festival</span>
+        <h2 class="section-title">India's Most Celebrated <span>Cultural Fest</span></h2>
+        <p>Utsav Events brings together the very best of India's music, culture, and entertainment under one grand stage. From the bustling streets of Hyderabad to the vibrant shores of Mumbai and the garden city of Bengaluru, we celebrate the soul of India.</p>
+        <p>Our events attract over 50,000 attendees each year, featuring 100+ artists from across different genres and regional music traditions — Tollywood, Bollywood, Kollywood, Carnatic, Hindustani, Folk, and more.</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa fa-music"></i></div>
+            <div class="highlight-text"><h4>100+ Artists</h4><p>Curated from all across India</p></div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa fa-map-marker-alt"></i></div>
+            <div class="highlight-text"><h4>8 Cities</h4><p>Hyderabad, Mumbai, Bengaluru & more</p></div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa fa-users"></i></div>
+            <div class="highlight-text"><h4>50,000+ Fans</h4><p>Attend our events every year</p></div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa fa-star"></i></div>
+            <div class="highlight-text"><h4>Award Winning</h4><p>Best event platform 2023 & 2024</p></div>
+          </div>
+        </div>
+        <a href="tickets.html" class="btn-primary">Book Your Seat Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCHEDULE ===== -->
+<section class="schedule-section" id="schedule">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:50px;">
+      <span class="section-subtitle">Event Programme</span>
+      <h2 class="section-title">Full <span>Schedule</span></h2>
+    </div>
+    <div class="schedule-tabs">
+      <div class="schedule-tab active" data-tab="day1">Day 1 — Hyderabad</div>
+      <div class="schedule-tab" data-tab="day2">Day 2 — Mumbai</div>
+      <div class="schedule-tab" data-tab="day3">Day 3 — Bengaluru</div>
+    </div>
+
+    <div class="schedule-content active" id="day1">
+      <div class="schedule-item">
+        <div class="schedule-time">06:00 PM<br>07:00 PM</div>
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">Opening Act — Rahul Sipligunj</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> Main Stage, HICC Novotel, Hyderabad</p>
+        </div>
+        <span class="schedule-tag">Tollywood</span>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">07:30 PM<br>09:00 PM</div>
+        <img src="https://images.unsplash.com/photo-1535643302794-19c3804b874b?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">DSP Live — Devi Sri Prasad</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> Main Stage, HICC Novotel, Hyderabad</p>
+        </div>
+        <span class="schedule-tag">Rockstar</span>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">09:30 PM<br>11:00 PM</div>
+        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">Shreya Ghoshal — Grand Finale</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> Main Stage, HICC Novotel, Hyderabad</p>
+        </div>
+        <span class="schedule-tag">Classical</span>
+      </div>
+    </div>
+
+    <div class="schedule-content" id="day2">
+      <div class="schedule-item">
+        <div class="schedule-time">07:00 PM<br>08:30 PM</div>
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">Sunidhi Chauhan Live — Bollywood Blockbusters</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> MMRDA Ground, BKC, Mumbai</p>
+        </div>
+        <span class="schedule-tag">Bollywood</span>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">09:00 PM<br>11:00 PM</div>
+        <img src="https://images.unsplash.com/photo-1487537708258-7c6a37e6abe3?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">Arijit Singh — Night of Melodies</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> MMRDA Ground, BKC, Mumbai</p>
+        </div>
+        <span class="schedule-tag">Romantic</span>
+      </div>
+    </div>
+
+    <div class="schedule-content" id="day3">
+      <div class="schedule-item">
+        <div class="schedule-time">05:00 PM<br>06:30 PM</div>
+        <img src="https://images.unsplash.com/photo-1527891751199-7225231a68dd?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">Vijay Prakash — Sandalwood Hits</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> Palace Grounds, Bengaluru</p>
+        </div>
+        <span class="schedule-tag">Kannada</span>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">07:00 PM<br>08:30 PM</div>
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">Anirudh Ravichander — Electronic Fest</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> Palace Grounds, Bengaluru</p>
+        </div>
+        <span class="schedule-tag">EDM</span>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">09:00 PM<br>11:00 PM</div>
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=100&q=80" alt="" class="schedule-artist-img" />
+        <div class="schedule-info">
+          <h4 class="schedule-title">Sona Mohapatra — Indie & Folk Night</h4>
+          <p class="schedule-venue"><i class="fa fa-map-marker-alt"></i> Palace Grounds, Bengaluru</p>
+        </div>
+        <span class="schedule-tag">Folk</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:50px;">
+      <span class="section-subtitle">Moments & Memories</span>
+      <h2 class="section-title">Event <span>Gallery</span></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80" alt="Event Gallery" /><div class="gallery-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Event Gallery" /><div class="gallery-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Event Gallery" /><div class="gallery-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80" alt="Event Gallery" /><div class="gallery-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?w=600&q=80" alt="Event Gallery" /><div class="gallery-overlay"><i class="fa fa-expand"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPONSORS ===== -->
+<section class="sponsors-section">
+  <div class="container">
+    <p class="sponsors-title">Our Proud Sponsors & Partners</p>
+    <div class="sponsors-grid">
+      <div class="sponsor-item">Jio</div>
+      <div class="sponsor-item">Swiggy</div>
+      <div class="sponsor-item">Hyundai</div>
+      <div class="sponsor-item">BookMyShow</div>
+      <div class="sponsor-item">Hotstar</div>
+      <div class="sponsor-item">Sun TV</div>
+      <div class="sponsor-item">Airtel</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-brand">Utsav<span>Events</span></a>
+        <p class="footer-desc">India's premier event management platform celebrating culture, music, and unforgettable experiences from Hyderabad to Mumbai and beyond.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">All Events</a></li>
+          <li><a href="tickets.html">Book Tickets</a></li>
+          <li><a href="#speakers">Artists</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Our Cities</p>
+        <ul class="footer-links">
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Mumbai</a></li>
+          <li><a href="#">Bengaluru</a></li>
+          <li><a href="#">Chennai</a></li>
+          <li><a href="#">Delhi NCR</a></li>
+          <li><a href="#">Kolkata</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Contact Us</p>
+        <div class="footer-contact-item"><i class="fa fa-map-marker-alt"></i><span>Banjara Hills, Road No. 12,<br>Hyderabad — 500034, Telangana</span></div>
+        <div class="footer-contact-item"><i class="fa fa-phone"></i><span>+91 98765 43210</span></div>
+        <div class="footer-contact-item"><i class="fa fa-envelope"></i><span>hello@utsavevents.in</span></div>
+        <div class="footer-contact-item"><i class="fa fa-clock"></i><span>Mon–Sat: 10AM – 7PM IST</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>UtsavEvents</span>. All Rights Reserved. Made with <i class="fa fa-heart" style="color:var(--primary);"></i> in Hyderabad.</p>
+      <p><a href="#" style="color:var(--text-muted);margin:0 10px;">Privacy Policy</a> <a href="#" style="color:var(--text-muted);">Terms of Use</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

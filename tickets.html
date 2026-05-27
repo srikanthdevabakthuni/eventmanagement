@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Tickets — Utsav Events India</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div id="navOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:998;"></div>
+<style>#navOverlay.active{display:block!important;}</style>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">Utsav<span>Events</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">Pages <i class="fa fa-chevron-down" style="font-size:0.65rem;margin-left:4px;"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#speakers">Artists</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="tickets.html" class="nav-link active">Tickets</a></li>
+      <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+      <li class="nav-item nav-cta"><a href="tickets.html" class="btn-primary">Book Tickets</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url('https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1600&q=80');">
+  <div class="container">
+    <span class="section-subtitle">Secure Your Spot</span>
+    <h1>Book Your <span>Tickets</span></h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa fa-chevron-right" style="font-size:0.7rem;color:var(--text-muted);"></i>
+      <span>Tickets</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COUNTDOWN FOR MAIN EVENT ===== -->
+<section class="countdown-section">
+  <div class="container">
+    <div class="countdown-inner">
+      <div>
+        <p class="section-subtitle">Hyderabad Grand Fest</p>
+        <h2 class="section-title">Event <span>Countdown</span></h2>
+      </div>
+      <div class="countdown-timer" id="countdown1"></div>
+      <div>
+        <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:6px;text-align:right;">20 Dec 2025 · HICC Novotel, Hyderabad</p>
+        <p style="color:var(--primary);font-family:'Rajdhani',sans-serif;font-size:0.82rem;letter-spacing:2px;text-align:right;">LIMITED SEATS AVAILABLE</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TICKET CARDS ===== -->
+<section class="tickets-section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px;">
+      <span class="section-subtitle">Choose Your Pass</span>
+      <h2 class="section-title">Select a <span>Ticket Plan</span></h2>
+      <p style="color:var(--text-muted);max-width:500px;margin:14px auto 0;font-size:0.9rem;">All tickets include free parking, entry to all stages, and a festival wristband.</p>
+    </div>
+
+    <div class="tickets-grid">
+
+      <!-- General Pass -->
+      <div class="ticket-card">
+        <div class="ticket-header">
+          <p class="ticket-type">General Access</p>
+          <div class="ticket-price" data-price="1499"><sup>₹</sup>1,499<sub>/person</sub></div>
+          <p class="ticket-event-name">Hyderabad Grand Fest</p>
+        </div>
+        <div class="ticket-body">
+          <ul class="ticket-features">
+            <li><i class="fa fa-check-circle"></i> General Standing Area</li>
+            <li><i class="fa fa-check-circle"></i> Access to All Main Stages</li>
+            <li><i class="fa fa-check-circle"></i> Festival Wristband</li>
+            <li><i class="fa fa-check-circle"></i> Free Parking Pass</li>
+            <li class="disabled"><i class="fa fa-times-circle"></i> VIP Lounge Access</li>
+            <li class="disabled"><i class="fa fa-times-circle"></i> Meet & Greet Pass</li>
+            <li class="disabled"><i class="fa fa-times-circle"></i> Exclusive Merchandise</li>
+          </ul>
+          <div class="ticket-qty">
+            <label>Quantity</label>
+            <div class="qty-controls">
+              <button class="qty-btn minus"><i class="fa fa-minus"></i></button>
+              <span class="qty-num">1</span>
+              <button class="qty-btn plus"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+          <a href="#booking-form" class="btn-primary" style="display:block;text-align:center;">Book General Pass</a>
+        </div>
+      </div>
+
+      <!-- VIP Pass (Featured) -->
+      <div class="ticket-card featured">
+        <div class="ticket-badge">Most Popular</div>
+        <div class="ticket-header">
+          <p class="ticket-type">VIP Experience</p>
+          <div class="ticket-price" data-price="3499"><sup>₹</sup>3,499<sub>/person</sub></div>
+          <p class="ticket-event-name">Hyderabad Grand Fest</p>
+        </div>
+        <div class="ticket-body">
+          <ul class="ticket-features">
+            <li><i class="fa fa-check-circle"></i> Premium Front Row Seating</li>
+            <li><i class="fa fa-check-circle"></i> Access to All Main Stages</li>
+            <li><i class="fa fa-check-circle"></i> Exclusive VIP Lounge</li>
+            <li><i class="fa fa-check-circle"></i> Festival Wristband + Kit</li>
+            <li><i class="fa fa-check-circle"></i> Free Parking Pass</li>
+            <li><i class="fa fa-check-circle"></i> Complimentary F&B Vouchers</li>
+            <li class="disabled"><i class="fa fa-times-circle"></i> Meet & Greet Pass</li>
+          </ul>
+          <div class="ticket-qty">
+            <label>Quantity</label>
+            <div class="qty-controls">
+              <button class="qty-btn minus"><i class="fa fa-minus"></i></button>
+              <span class="qty-num">1</span>
+              <button class="qty-btn plus"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+          <a href="#booking-form" class="btn-primary" style="display:block;text-align:center;">Book VIP Pass</a>
+        </div>
+      </div>
+
+      <!-- Platinum Pass -->
+      <div class="ticket-card">
+        <div class="ticket-header">
+          <p class="ticket-type">Platinum All Access</p>
+          <div class="ticket-price" data-price="6999"><sup>₹</sup>6,999<sub>/person</sub></div>
+          <p class="ticket-event-name">Hyderabad Grand Fest</p>
+        </div>
+        <div class="ticket-body">
+          <ul class="ticket-features">
+            <li><i class="fa fa-check-circle"></i> Stage-side Premium Zone</li>
+            <li><i class="fa fa-check-circle"></i> Access to All Main Stages</li>
+            <li><i class="fa fa-check-circle"></i> Exclusive VIP Lounge</li>
+            <li><i class="fa fa-check-circle"></i> Festival Wristband + Premium Kit</li>
+            <li><i class="fa fa-check-circle"></i> Free Valet Parking</li>
+            <li><i class="fa fa-check-circle"></i> Full F&B Included</li>
+            <li><i class="fa fa-check-circle"></i> Artist Meet & Greet Pass</li>
+          </ul>
+          <div class="ticket-qty">
+            <label>Quantity</label>
+            <div class="qty-controls">
+              <button class="qty-btn minus"><i class="fa fa-minus"></i></button>
+              <span class="qty-num">1</span>
+              <button class="qty-btn plus"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+          <a href="#booking-form" class="btn-primary" style="display:block;text-align:center;">Book Platinum Pass</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Other Events Tickets -->
+    <div style="margin-top:30px;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:30px;text-align:center;">Tickets for <span style="color:var(--primary);">Other Cities</span></h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div>
+            <p style="font-family:'Rajdhani',sans-serif;font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--primary);margin-bottom:4px;"><i class="fa fa-map-marker-alt"></i> Mumbai</p>
+            <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:4px;">Mumbai Beats</h4>
+            <p style="font-size:0.8rem;color:var(--text-muted);">15 Nov 2025 · MMRDA BKC</p>
+          </div>
+          <div style="text-align:right;">
+            <p style="font-family:'Rajdhani',sans-serif;font-size:1.4rem;font-weight:700;color:var(--primary);">₹2,199</p>
+            <a href="#booking-form" class="btn-primary" style="padding:8px 18px;font-size:0.8rem;display:inline-block;margin-top:6px;">Book</a>
+          </div>
+        </div>
+
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div>
+            <p style="font-family:'Rajdhani',sans-serif;font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--primary);margin-bottom:4px;"><i class="fa fa-map-marker-alt"></i> Bengaluru</p>
+            <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:4px;">Namma Bengaluru Fest</h4>
+            <p style="font-size:0.8rem;color:var(--text-muted);">25 Jan 2026 · Palace Grounds</p>
+          </div>
+          <div style="text-align:right;">
+            <p style="font-family:'Rajdhani',sans-serif;font-size:1.4rem;font-weight:700;color:var(--primary);">₹999</p>
+            <a href="#booking-form" class="btn-primary" style="padding:8px 18px;font-size:0.8rem;display:inline-block;margin-top:6px;">Book</a>
+          </div>
+        </div>
+
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div>
+            <p style="font-family:'Rajdhani',sans-serif;font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--primary);margin-bottom:4px;"><i class="fa fa-map-marker-alt"></i> Chennai</p>
+            <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:4px;">Madras Music Season</h4>
+            <p style="font-size:0.8rem;color:var(--text-muted);">10 Feb 2026 · YMCA Ground</p>
+          </div>
+          <div style="text-align:right;">
+            <p style="font-family:'Rajdhani',sans-serif;font-size:1.4rem;font-weight:700;color:var(--primary);">₹1,199</p>
+            <a href="#booking-form" class="btn-primary" style="padding:8px 18px;font-size:0.8rem;display:inline-block;margin-top:6px;">Book</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKING FORM ===== -->
+<section class="booking-form-section" id="booking-form">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:50px;">
+      <span class="section-subtitle">Complete Your Purchase</span>
+      <h2 class="section-title">Booking <span>Details</span></h2>
+    </div>
+    <div class="booking-form-wrap">
+      <div class="form-card">
+        <h3 class="form-title">Personal Information</h3>
+        <p class="form-subtitle">Fill in your details to secure your tickets. You'll receive a confirmation on your email.</p>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Arjun" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Reddy" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="arjun@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input type="tel" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Select Event</label>
+              <select required>
+                <option value="" disabled selected>Choose an event</option>
+                <option>Hyderabad Grand Music Festival — 20 Dec 2025</option>
+                <option>Charminar Folk & Jazz Evening — 05 Jan 2026</option>
+                <option>Mumbai Beats Bollywood Night — 15 Nov 2025</option>
+                <option>Namma Bengaluru Culture Fest — 25 Jan 2026</option>
+                <option>Madras Music Season Special — 10 Feb 2026</option>
+                <option>Dilli Dilwalon Ki Sufi Night — 14 Feb 2026</option>
+                <option>City of Joy Cultural Grand Fest — 22 Mar 2026</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Ticket Type</label>
+              <select required>
+                <option value="" disabled selected>Choose ticket type</option>
+                <option>General Access — ₹1,499</option>
+                <option>VIP Experience — ₹3,499</option>
+                <option>Platinum All Access — ₹6,999</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Tickets</label>
+              <select required>
+                <option>1 Ticket</option>
+                <option>2 Tickets</option>
+                <option>3 Tickets</option>
+                <option>4 Tickets</option>
+                <option>5 Tickets</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>City / State</label>
+              <input type="text" placeholder="Hyderabad, Telangana" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Special Requirements (Optional)</label>
+            <textarea placeholder="Wheelchair access, dietary needs, etc."></textarea>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="order-summary">
+            <div class="order-row"><span>Ticket Price</span><span class="amt">₹1,499</span></div>
+            <div class="order-row"><span>Booking Fee (5%)</span><span class="amt">₹75</span></div>
+            <div class="order-row"><span>GST (18%)</span><span class="amt">₹270</span></div>
+            <div class="order-row"><strong>Total Payable</strong><span class="amt" id="order-total">₹1,844</span></div>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Refund Policy</a> of UtsavEvents. All ticket sales are final.</label>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%;font-size:1.05rem;padding:16px;">
+            <i class="fa fa-lock" style="margin-right:10px;"></i>Confirm & Pay Securely
+          </button>
+          <p style="text-align:center;margin-top:14px;font-size:0.78rem;color:var(--text-muted);"><i class="fa fa-shield-alt" style="color:var(--primary);margin-right:6px;"></i>256-bit SSL Encrypted · Razorpay Secured · Instant E-Ticket on Email</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-brand">Utsav<span>Events</span></a>
+        <p class="footer-desc">India's premier event management platform celebrating culture, music, and unforgettable experiences.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">All Events</a></li>
+          <li><a href="tickets.html">Book Tickets</a></li>
+          <li><a href="index.html#speakers">Artists</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Our Cities</p>
+        <ul class="footer-links">
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Mumbai</a></li>
+          <li><a href="#">Bengaluru</a></li>
+          <li><a href="#">Chennai</a></li>
+          <li><a href="#">Delhi NCR</a></li>
+          <li><a href="#">Kolkata</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Contact Us</p>
+        <div class="footer-contact-item"><i class="fa fa-map-marker-alt"></i><span>Banjara Hills, Road No. 12,<br>Hyderabad — 500034</span></div>
+        <div class="footer-contact-item"><i class="fa fa-phone"></i><span>+91 98765 43210</span></div>
+        <div class="footer-contact-item"><i class="fa fa-envelope"></i><span>hello@utsavevents.in</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>UtsavEvents</span>. All Rights Reserved. Made with <i class="fa fa-heart" style="color:var(--primary);"></i> in Hyderabad.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
